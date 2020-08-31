@@ -87,9 +87,13 @@ footer {
 .contact {
     font-weight: bold;
 }
-ul i {
+footer li {
+    display:inline;
     font-size: 22px;
     margin:0 30px;
+    text-decoration:none;
+}
+footer i {
     margin-top: 20px;
 }
 
@@ -144,14 +148,22 @@ ul i {
         float: none;
         margin: auto;
     }
-    ul i {
+    footer i {
         margin: auto;
+        margin-top:20px;
     }
 }
 
-@media screen and (max-width: 331px)
+@media screen and (max-width: 415px)
 {
     .image_titre, .photos {
         display: none;
+    }
+    footer ul {
+        display: flex;
+        flex-direction: column;
+    }
+    footer i {
+        margin:auto;
     }
 }
